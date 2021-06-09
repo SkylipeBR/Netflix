@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="CSS/netflix.css">
+<link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Netflix Brasil - Watch TV Shows Online
+        </title>
+    </head>
+
+    <body>
+        <!--Menu-->
+
+        <header class="header">
+            <img src="img/netflix.svg" alt="netflix" draggable="false">
+            <select>
+                <option lang="en" value="indexen.html"><a value="indexen.html">Inglês</a></option>
+                <option lang="pt" value="index.html"><a value="index.html">Português</a></option>
+            </select>
+            <a href="/">Entrar</a>
+        </header>
+
+        <!--Banner da  netflix-->
+
+        <main class="main">
+            <div class="main-child">
+                
+                <h1>Movies, series and more. No Boundaries.</h1>
+                <span>Watch wherever you want. Cancel whenever you want.</span>
+                <p>Ready to watch? Enter your email to create or
+                    restart your subscription.</p>
+                    <form class="form-btn">
+                        <input type="text" name="email" class="text" placeholder="Email" required>
+                        <button>lets go</button>
+                    </form>
+            </div>
+
+            <div class="gradient"></div>
+                
+            
+        </main>
+        
+
+        <!--Primeria seção de Sections para fazer o grid-->
+
+        <section>
+            <div class="container">
+                <div class="grid">
+                    <div class="text">
+                        <h1>Enjoy on TV.</h1>
+                        <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast,
+                            Apple TV, Blu-ray players and other devices.</p>
+                    </div>
+                <div class="img-tv">        
+                <div class="tv">
+                     <img src="img/tv.png">
+                        <video autoplay playsinline muted loop class="video-tv">
+                         <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
+                     </video>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   <!--Segunda seção com a ELeven-->
+
+        <section class="dwlo">
+            <div class="container">
+                <div class=" grid">
+                    <div class="text">
+                        <h1>Download series to watch offline.</h1>
+                        <p>Save your favorite titles and always have something to watch.</p>
+                    </div>
+                <div class="img-tv">        
+                    <div class="tv">
+                        <img src="img/el.jpg">
+                                <img src="">
+                                 <video autoplay playsinline muted loop class="video-tv">
+                                    <source src="">
+                                 </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--terceira seção de animação-->
+
+        <section class="plt-section">
+            <div class="container">
+                <div class=" grid">
+                    <div class="text">
+                        <h1>Watch everywhere.</h1>
+                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+                    </div>
+                <div class="img-treiler">        
+                    <div class="treiler">
+                        <img src="Img/device-pile.png">
+                                
+                                 <video autoplay playsinline muted loop class="video-treiler">
+                                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v">
+                                 </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Ultima seção de filmes-->
+
+        <section class="kids-section">
+            <div class="container">
+                <div class=" grid">
+                    <div class="text">
+                        <h1>Crie perfis para crianças.</h1>
+                        <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+                    </div>
+                <div class="img-kids">        
+                    <div class="kids">
+                        <img src="Img/kids.png">
+                                
+                                 <video autoplay playsinline muted loop class="video-treiler">
+                                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v">
+                                 </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            let selectEl = document.getElementsByTagName('select');
+            selectEl[0].addEventListener('change', function() {
+            location.href=this.value;
+});
+        </script>
+    </body>
+</html>
